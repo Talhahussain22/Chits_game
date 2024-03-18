@@ -1,12 +1,16 @@
 import random
 def shuffle():
+    p1=input("Enter the name of player1:").upper()
+    p2 = input("Enter the name of player2:").upper()
+    p3 = input("Enter the name of player3:").upper()
+    p4 = input("Enter the name of player4:").upper()
     limit=5000
-    dic_player_total_marks = {'HUSSAIN': 0, 'AHMED': 0, 'DAUD': 0, 'ABDULLAH': 0}
+    dic_player_total_marks = {p1: 0, p2: 0, p3: 0, p4: 0}
     maximum = max(dic_player_total_marks.values())
     while(maximum<limit):
         l_player=[]
         l_marks=[]
-        players=['HUSSAIN','AHMED','DAUD','ABDULLAH']
+        players=[p1,p2,p3,p4]
         higher_marks=[1000,500]
         lower_marks=[300,0]
         dic_data={}
